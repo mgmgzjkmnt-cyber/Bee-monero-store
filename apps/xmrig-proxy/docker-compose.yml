@@ -1,3 +1,5 @@
+version: "3.7"
+
 services:
   xmrig-proxy:
     image: moneroecosystem/xmrig-proxy:latest
@@ -5,4 +7,4 @@ services:
     network_mode: host
     restart: unless-stopped
     volumes:
-      - /data/config.json:/config.json:ro
+      - ${APP_DATA_DIR}/config.json:/config.json:ro
