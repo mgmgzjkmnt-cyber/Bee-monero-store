@@ -1,10 +1,10 @@
-id: Bee-monero-store-xmrig-proxy
+id: bee-monero-store-xmrig-proxy
 name: XMRig Proxy
 version: "6.26.0"
 manifestVersion: 1
 category: Utility
 shortDescription: Central Stratum proxy for Monero Mining.
-description: Bundles mining power from 10-20 rigs and routes them to your Umbrel node or a public pool.
+description: Bundles mining power from 10-20 rigs and routes them to your Umbrel node. Includes a Web-UI.
 developer: XMRig
 website: https://xmrig.com
 submitter: CustomApp
