@@ -8,3 +8,12 @@ services:
     restart: unless-stopped
     volumes:
       - ${APP_DATA_DIR}/config.json:/config.json:ro
+
+  proxy-dashboard:
+    image: wjc2821296948/xmrig-proxy-dashboard:latest
+    container_name: xmrig-proxy-dashboard
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      - PROXY_API_HOST=127.0.0.1
+      - PROXY_API_PORT=8080
