@@ -1,0 +1,8 @@
+services:
+  xmrig-proxy:
+    image: moneroecosystem/xmrig-proxy:latest
+    container_name: xmrig-proxy
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+      - /data/config.json:/config.json:ro
